@@ -1,0 +1,1 @@
+Photo gallery with simple styling that displays EXIF information for added photos.

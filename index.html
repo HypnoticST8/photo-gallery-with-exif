@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Simple photo gallery with EXIF info</title>
+    <link rel="icon" href="data:;base64,iVBORw0KGgo=">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+    <main id="gallery" class="gallery">
+        <h1 class="title">Simple photos gallery</h1>
+        <input id="photo" class="gallery__add-photo" type="file" accept="image/jpeg"/>
+    </main>
+    <template>
+        <section class="gallery__item">
+            <img class="gallery__thumbnail" src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=">
+            <div class="gallery__info">
+                <h1 class="gallery__file-data" id="photo-name"></h1>
+                <h3 class="gallery__file-data" id="photo-gps"></h3>
+            </div>
+            <button class="gallery__delete-item">x</button>
+        </section>
+    </template>
+</body>
+<script src="./scripts/exif.js"></script>
+<script src="./scripts/gallery-with-tamplate.js"></script>
+</html>
